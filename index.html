@@ -20,9 +20,11 @@
 <body>
 
 <script>
-	$.getJSON("data/characters.json", function (characters) {
-		$.each(characters, function (key, value) {
-			alert(value.name);
+	$.(document).ready(function () {
+		$.getJSON("data/characters.json", function (characters) {
+			$.each(characters, function (key, value) {
+				alert(value.name);
+			});
 		});
 	});
 </script>
