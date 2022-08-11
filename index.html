@@ -20,7 +20,7 @@
 <body>
 
 <script>
-	$.(document).ready(function () {
+	$(document).ready(function () {
 		$.getJSON("data/characters.json", function (characters) {
 			$.each(characters, function (key, value) {
 				alert(value.name);
