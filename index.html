@@ -39,7 +39,7 @@ Intro paragraph to explain project.
 		it for fun :). </br></br>
 
 	</div>
-	<p src="images/first.png" alt="First sketch" width=420px height=510px>
+	<img src="images/first.png" alt="First sketch" width=420px height=510px></img>
 
 	<div class="para">
 	The firery skeleton (name's Vexen) above is my first ever drawing! The work
@@ -57,7 +57,7 @@ Intro paragraph to explain project.
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += "<div class=\"entry\" " + "number=" + value.number + ">" + value.name + "</div>";
+				character += "<div class=\"entry\" " + " number=" + value.number + ">" + value.name + "</div>";
 			});
 		$("body").append(character);
 		});
