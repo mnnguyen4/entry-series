@@ -28,8 +28,9 @@
 				character += '<tr>';
 				character += '<td>' + value.name + '</td>';
 				character += '<td>' + value.number + '</td>';
+				character += '<td>' + "<img src='" + "images/" + value.number + ".png'>" + '</td>';
 				character += '</tr>';
-				character += "<img src=\"" + "images/" + value.number + ".png\">";
+
 			});
 			$('#table').append(character);
 		});
