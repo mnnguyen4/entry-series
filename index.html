@@ -25,9 +25,9 @@
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += '<article id='banner-button'>';
-				character += "<img src='" + "images/" + value.number + ".png'>";
-				character += '</article>';
+				character += '<p class='entry'>';
+				character += value.name;
+				character += '</p>';
 
 			});
 			$('#body').append(character);

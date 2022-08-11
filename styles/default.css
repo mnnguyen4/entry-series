@@ -32,3 +32,8 @@ h1 {
 p1 {
 
 }
+
+.entry {
+	border-style: solid;
+	border-width: 3px;
+}
