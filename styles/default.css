@@ -33,6 +33,10 @@ p1 {
 
 }
 
+.big_image {
+	position: relative;
+}
+
 .para {
 	width: 400px;
 	word-wrap: normal;
@@ -41,6 +45,7 @@ p1 {
 .entry {
 	font-family: PressStart2P-Regular;
 	font-size: 15px;
+	hyphens: auto;
 	text-align: left;
 	position: relative;
 
