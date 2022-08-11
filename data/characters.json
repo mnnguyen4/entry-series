@@ -1,0 +1,16 @@
+{
+
+	"characters:" [
+		{
+			"name": "Pedro la Susan",
+			"number": 1,
+			"image": "images/1.png"
+		},
+		{
+			"name": "Swift-footed Kirchoff",
+			"number": 2,
+			"image": "images/2.png"
+		}
+	]
+
+}

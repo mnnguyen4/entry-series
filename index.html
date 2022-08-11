@@ -1,4 +1,70 @@
-<h1>Hello World!</h1>
-<h2>This is a second line.</h2>
-<h3>Testing Git stuff...</h3>
-<h4>Will this be big?</h4>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/default.css">
+<Title>
+	Entry Series - Homepage
+</Title>
+
+<style>
+	div.para{
+		width: 400px;
+		word-wrap: normal;
+	}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+
+<script>
+	$.getJSON("/data/characters.json", function (characters) {
+		$.each(characters, function (key, value) {
+			alert(value.name);
+		});
+	});
+</script>
+
+<!-- 
+Title of Website
+-->
+<h1>
+Entry Series
+</h1>
+
+
+<!--
+Intro paragraph to explain project.
+-->
+<p1>
+	<div class="para">
+
+		Hey! I'm Matt, and welcome to the homepage for
+		the Entry Series, an art project focused primarily on
+		having fun and drawing characters!</br></br>
+
+		This project started around 2019, although some of the
+		character designs are much older. Back then, I wanted to get more serious
+		and learn what character design really meant. I thought I could do it
+		as a job professionally. After looking at various
+		books and tutorials and doing a bit of self-reflection, I
+		realized that that wasn't what I wanted to go. So, I did
+		it for fun :). </br></br>
+
+	</div>
+	<img src="images/first.png" alt="First sketch" width=420px height=510px>
+
+	<div class="para">
+	The firery skeleton (name's Vexen) above is my first ever drawing! The work
+	of this project includes both traditional (ink, pencil, paint, etc.) and digital
+	mediums (animations, pngs, jpegs, etc.). This website is mainly for reference,
+	both for myself and others who may be interested. </br></br>
+
+	You can contact me at candyalienman@gmail.com or @candysweetssjr on Instagram.
+	Well, enjoy the art!
+	</div>
+</p1>
+</body>
+</html>
