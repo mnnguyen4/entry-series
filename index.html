@@ -64,7 +64,7 @@ Intro paragraph to explain project.
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += "<p> bob </p>";
+				character += "<p class=&quot;entry%quot;>" + value.name + "</p>";
 			});
 		$("body").append(character);
 		});
