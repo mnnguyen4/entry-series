@@ -33,9 +33,17 @@ p1 {
 
 }
 
+.para {
+	width: 400px;
+	word-wrap: normal;
+}
+
 .entry {
 	font-family: Arial;
-	border-color: #000000;
-	border-style: solid;
-	border-width: 3px;
+	position: relative;
+
+	width: 100px;
+	word-wrap: break-word;
+	padding: 5px;
+	border: 3px solid #000000;
 }
