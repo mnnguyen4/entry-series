@@ -19,15 +19,22 @@
 
 <body>
 
+<table id='table'>
 <script>
 	$(document).ready(function () {
 		$.getJSON("data/characters.json", function (characters) {
+			var character = '';
 			$.each(characters, function (key, value) {
-				alert(value.name);
+				character += '<tr>';
+				character += '<td>' + value.name + '</td>';
+				character += '<td>' + value.number + '</td?';
+				character += '</tr>'
 			});
+			$('#table').append(character);
 		});
 	});
 </script>
+</table>
 
 <!-- 
 Title of Website
@@ -68,5 +75,6 @@ Intro paragraph to explain project.
 	Well, enjoy the art!
 	</div>
 </p1>
+
 </body>
 </html>
