@@ -22,12 +22,12 @@
 <table id='table'>
 <script>
 	$(document).ready(function () {
-		$.getJSON("data/characters.json", function (characters) {
+		$.getJSON("data/characters.json", function (data) {
 			var character = '';
-			$.each(characters, function (key, value) {
+			$.each(data, function (key, value) {
 				character += '<tr>';
 				character += '<td>' + value.name + '</td>';
-				character += '<td>' + value.number + '</td?';
+				character += '<td>' + value.number + '</td>';
 				character += '</tr>';
 			});
 			$('#table').append(character);
