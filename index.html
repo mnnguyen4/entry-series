@@ -19,23 +19,6 @@
 
 <body>
 
-<table id='table'>
-<script>
-	$(document).ready(function () {
-		$.getJSON("data/characters.json", function (data) {
-			var character = '';
-			$.each(data, function (key, value) {
-				character += '<p class='entry'>';
-				character += value.name;
-				character += '</p>';
-
-			});
-			$('#body').append(character);
-		});
-	});
-</script>
-</table>
-
 <!-- 
 Title of Website
 -->
@@ -75,6 +58,21 @@ Intro paragraph to explain project.
 	Well, enjoy the art!
 	</div>
 </p1>
+
+<script>
+	$(document).ready(function () {
+		$.getJSON("data/characters.json", function (data) {
+			var character = '';
+			$.each(data, function (key, value) {
+				character += '<p class='entry'>';
+				character += value.name;
+				character += '</p>';
+
+			});
+			$('#body').append(character);
+		});
+	});
+</script>
 
 </body>
 </html>
