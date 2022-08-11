@@ -14,7 +14,7 @@ function display_character() {
 	var num = event.target.getAttribute("number");
 
 	big_image.setAttribute("display", "inline");
-	big_image.setAttribute("src", "images/" + num + ".wpeg");
+	big_image.setAttribute("src", "images/" + num + ".webp");
 
 	var bi_width = big_image.naturalWidth;
 	var bi_height = big_image.naturalHeight;

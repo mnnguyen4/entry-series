@@ -57,7 +57,7 @@ Intro paragraph to explain project.
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += "<div class=\"entry\" " + " number=" + value.number + ">" + value.name + "</div>";
+				character += "<div class=\"entry\"" + " number=" + value.number + ">" + value.name + "</div>";
 			});
 		$("body").append(character);
 		});
