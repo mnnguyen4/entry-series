@@ -34,7 +34,8 @@ p1 {
 }
 
 .entry {
-	font-family: TimesNewRoman;
+	font-family: Arial;
+	border-color: #000000;
 	border-style: solid;
 	border-width: 3px;
 }
