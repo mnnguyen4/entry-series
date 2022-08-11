@@ -25,14 +25,12 @@
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += '<tr>';
-				character += '<td>' + value.name + '</td>';
-				character += '<td>' + value.number + '</td>';
-				character += '<td>' + "<img src='" + "images/" + value.number + ".png'>" + '</td>';
-				character += '</tr>';
+				character += '<article id="banner-button">';
+				character += "<img class='icon' src='" + "images/" + value.number + ".png'>";
+				character += '</article>';
 
 			});
-			$('#table').append(character);
+			$('#body').append(character);
 		});
 	});
 </script>
