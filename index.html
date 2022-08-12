@@ -54,17 +54,17 @@ Intro paragraph to explain project.
 	</div>
 </p1>
 
-<!--<script>
+<script>
 	$(document).ready(function () {
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
 				character = "<div class=\"entry\" " + "number=" + value.number + ">" + value.name + "</div>";
+				$("body").append(character);
 			});
-		$("body").append(character);
 		});
 	});
-</script>-->
+</script>
 
 <!-- some tests with the entry class -->
 <!--

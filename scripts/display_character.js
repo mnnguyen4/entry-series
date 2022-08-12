@@ -1,6 +1,3 @@
-// Creates entries for entry list
-var characters = JSON.parse(characters);
-console.log(characters);
 
 // Collects every entry in entry list into a list
 var entry = document.getElementsByClassName("entry");
