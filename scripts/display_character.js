@@ -4,21 +4,6 @@ var entries;
 var big_image;
 retrieve();
 
-// Displays matching character
-function display_character() {
-
-	var num = event.target.getAttribute("number");
-
-	big_image.setAttribute("src", "images/" + num + ".png");
-
-	var bi_width = big_image.naturalWidth;
-	var bi_height = big_image.naturalHeight;
-
-	big_image.setAttribute("width", bi_width/5);
-	big_image.setAttribute("height", bi_height/5);
-
-}
-
 // Grabs JSON file with entries
 async function retrieve() {
 
@@ -37,7 +22,7 @@ function populate() {
 		const character_data = entries[entry];
 		new_entry.className = "entry";
 		new_entry.textContent = character_data.name;
-		new_entry.number = character_data.number;
+		new_entry.setAttribute("number", character_data.number);
 
 		document.body.appendChild(new_entry);
 	}
@@ -47,6 +32,7 @@ function populate() {
 function activate_interactive() {
 	// Collects every entry in entry list into a list
 	var entry = document.getElementsByClassName("entry");
+	console.log(entry);
 
 	// Adds onhover listener to entries in entry list
 	for (let i = 0; i < entry.length; i++) {
@@ -54,4 +40,20 @@ function activate_interactive() {
 	}
 
 	big_image = document.getElementsByClassName("big_image")[0];
+}
+
+// Displays matching character
+function display_character() {
+
+	var num = event.target.getAttribute("number");
+	console.log(num);
+
+	big_image.setAttribute("src", "images/" + num + ".png");
+
+	var bi_width = big_image.naturalWidth;
+	var bi_height = big_image.naturalHeight;
+
+	big_image.setAttribute("width", bi_width/5);
+	big_image.setAttribute("height", bi_height/5);
+
 }
