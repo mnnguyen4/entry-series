@@ -1,14 +1,8 @@
+// Retrieves JSON data, parses JSON data into object list, and
+// creates entries in body of page
+var entries;
+var big_image;
 retrieve();
-
-// Collects every entry in entry list into a list
-var entry = document.getElementsByClassName("entry");
-
-// Adds onhover listener to entries in entry list
-for (let i = 0; i < entry.length; i++) {
-	entry[i].addEventListener("mouseover", display_character);
-}
-
-var big_image = document.getElementsByClassName("big_image")[0];
 
 // Displays matching character
 function display_character() {
@@ -33,7 +27,31 @@ async function retrieve() {
 
 	const response = await fetch(request);
 	const characters_text = await response.text();
-	console.log(characters_text);
-	const entries = JSON.parse(characters_text);
+	entries = JSON.parse(characters_text);
+	populate();
+}
 
+function populate() {
+	for (const entry in entries) {
+		const new_entry = document.createElement("div");
+		const character_data = entries[entry];
+		new_entry.className = "entry";
+		new_entry.textContent = character_data.name;
+		new_entry.number = character_data.number;
+
+		document.body.appendChild(new_entry);
+	}
+	activate_interactive();
+}
+
+function activate_interactive() {
+	// Collects every entry in entry list into a list
+	var entry = document.getElementsByClassName("entry");
+
+	// Adds onhover listener to entries in entry list
+	for (let i = 0; i < entry.length; i++) {
+		entry[i].addEventListener("mouseover", display_character);
+	}
+
+	big_image = document.getElementsByClassName("big_image")[0];
 }
