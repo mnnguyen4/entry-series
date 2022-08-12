@@ -57,10 +57,11 @@ function display_character() {
 		var bi_width = big_image.naturalWidth;
 		var bi_height = big_image.naturalHeight;
 
-		var new_width = (bi_width*600) / bi_height;
+		var new_height = Math.min(600, bi_height);
+		var new_width = (bi_width*new_height) / bi_height;
 
 		big_image.setAttribute("width", new_width);
-		big_image.setAttribute("height", 600);
+		big_image.setAttribute("height", new_height);
 
 	}
 }

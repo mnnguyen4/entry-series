@@ -49,9 +49,13 @@ h1 {
 	Big image style
 */
 .big_image {
+	pointer-events: none;
+
 	position: fixed;
 	right: 10px;
+	/*right: max(calc(length/2) , 10px);*/
 	bottom: -100px;
+	z-index:3;
 
 	filter: drop-shadow(20px 20px 0px #212121);
 }
@@ -63,6 +67,7 @@ h1 {
 
 	to {
 		right: 10px;
+		/*right: max(calc(length/2) , 10px);*/
 	}
 }
 
@@ -91,6 +96,7 @@ h1 {
 	hyphens: auto;
 	text-align: left;
 	position: relative;
+	z-index: 2;
 
 	background: #000000;
 	display: inline-flex;
