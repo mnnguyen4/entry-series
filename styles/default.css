@@ -46,14 +46,12 @@ h1 {
 }
 
 /*
-	Big image style
+	Big image style & animations!
 */
 .big_image {
 	pointer-events: none;
-
+	right:-1000px;
 	position: fixed;
-	right: 10px;
-	/*right: max(calc(length/2) , 10px);*/
 	bottom: -100px;
 	z-index:3;
 
@@ -67,12 +65,27 @@ h1 {
 
 	to {
 		right: 10px;
-		/*right: max(calc(length/2) , 10px);*/
+	}
+}
+
+@keyframes slide_out {
+	from {
+		right: 10px;
+	}
+
+	to {
+		right: -1000px;
 	}
 }
 
 .changing {
 	animation: slide_in 1s;
+	right: 10px;
+}
+
+.changing_out {
+	animation: slide_out 1s;
+	right: -1000px;
 }
 
 /*
