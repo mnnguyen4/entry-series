@@ -15,6 +15,7 @@ function display_character() {
 
 	big_image.setAttribute("display", "inline");
 	big_image.setAttribute("src", "images/" + num + ".png");
+	console.log("images/" + num + ".png");
 
 	var bi_width = big_image.naturalWidth;
 	var bi_height = big_image.naturalHeight;
