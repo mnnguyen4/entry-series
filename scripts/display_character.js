@@ -32,7 +32,6 @@ function populate() {
 function activate_interactive() {
 	// Collects every entry in entry list into a list
 	var entry = document.getElementsByClassName("entry");
-	console.log(entry);
 
 	// Adds onhover listener to entries in entry list
 	for (let i = 0; i < entry.length; i++) {
@@ -46,7 +45,6 @@ function activate_interactive() {
 function display_character() {
 
 	var num = event.target.getAttribute("number");
-	console.log(num);
 
 	big_image.setAttribute("src", "images/" + num + ".png");
 
