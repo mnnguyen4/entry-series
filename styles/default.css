@@ -69,5 +69,7 @@ h1 {
 }
 
 .entry:hover {
-	background-color: yellow;
+	color: #000000;
+	border: 3px solid #ffffff;
+	background-color: white;
 }
