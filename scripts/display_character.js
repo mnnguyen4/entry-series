@@ -58,4 +58,16 @@ function display_character() {
 	big_image.setAttribute("width", new_width);
 	big_image.setAttribute("height", 600);
 
+	play_big_image_slide_in();
+
+}
+
+function play_big_image_slide_in() {
+	document.getElementsByClassName("big_image")[0].className = "big_image";
+	requestAnimationFrame((time) => {
+		requestAnimationFrame((time) => {
+			document.getElementsByClassName("big_image")[0].className = "big_image changing";
+		});
+	});
+	console.log("animation played");
 }
