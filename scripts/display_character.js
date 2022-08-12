@@ -1,3 +1,4 @@
+retrieve();
 
 // Collects every entry in entry list into a list
 var entry = document.getElementsByClassName("entry");
@@ -21,5 +22,18 @@ function display_character() {
 
 	big_image.setAttribute("width", bi_width/5);
 	big_image.setAttribute("height", bi_height/5);
+
+}
+
+// Grabs JSON file with entries
+async function retrieve() {
+
+	const requestURL = "https://mnnguyen4.github.io/entry-series/data/characters.json";
+	const request = new Request(requestURL);
+
+	const response = await fetch(request);
+	const characters_text = await response.text();
+	console.log(characters_text);
+	const entries = JSON.parse(characters_text);
 
 }
