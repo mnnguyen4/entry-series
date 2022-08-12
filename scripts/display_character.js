@@ -35,6 +35,8 @@ function activate_interactive() {
 	// Adds onhover listener to entries in entry list
 	for (let i = 0; i < entry.length; i++) {
 		entry[i].addEventListener("mouseover", display_character);
+		var temp_img = new Image();
+		temp_img.src = "images/" + entry[i].number + ".png";
 	}
 
 	big_image = document.getElementsByClassName("big_image")[0];
@@ -49,6 +51,7 @@ function display_character() {
 	if (old_image != new_image) {
 
 		play_big_image_slide_in();
+		big_image.setAttribute("src", "");
 		big_image.setAttribute("src", "images/" + num + ".png");
 
 		var bi_width = big_image.naturalWidth;
