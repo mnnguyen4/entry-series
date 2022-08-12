@@ -15,7 +15,6 @@ function display_character() {
 
 	var num = event.target.getAttribute("number");
 
-	big_image.setAttribute("display", "inline");
 	big_image.setAttribute("src", "images/" + num + ".png");
 	console.log("images/" + num + ".png");
 
