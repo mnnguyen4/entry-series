@@ -6,7 +6,6 @@ retrieve();
 
 // Grabs JSON file with entries
 async function retrieve() {
-
 	const requestURL = "https://mnnguyen4.github.io/entry-series/data/characters.json";
 	const request = new Request(requestURL);
 
@@ -51,7 +50,12 @@ function display_character() {
 	var bi_width = big_image.naturalWidth;
 	var bi_height = big_image.naturalHeight;
 
-	big_image.setAttribute("width", bi_width/5);
-	big_image.setAttribute("height", bi_height/5);
+	var new_width = (bi_width*600) / bi_height;
+
+
+	//big_image.setAttribute("width", bi_width/5);
+	//big_image.setAttribute("height", bi_height/5);
+	big_image.setAttribute("width", new_width);
+	big_image.setAttribute("height", 600);
 
 }
