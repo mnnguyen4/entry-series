@@ -4,6 +4,7 @@ var entry = document.getElementsByClassName("entry");
 // Adds onhover listener to entries in entry list
 for (let i = 0; i < entry.length; i++) {
 	entry[i].addEventListener("mouseover", display_character);
+	console.log(i);
 }
 
 var big_image = document.getElementsByClassName("big_image")[0];
