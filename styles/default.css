@@ -37,8 +37,14 @@ h1 {
 		2px 2px 0 #000000;
 }
 
-.big_image {
+#container {
 	position: relative;
+}
+
+.big_image {
+	position: fixed;
+	right: 10px;
+	bottom: -100px;
 }
 
 .para {
