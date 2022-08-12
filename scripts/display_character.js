@@ -42,24 +42,23 @@ function activate_interactive() {
 
 // Displays matching character
 function display_character() {
-
 	var num = event.target.getAttribute("number");
+	var old_image = big_image.getAttribute("src");
+	var new_image = "images/" + num + ".png";
+	if (old_image != new_image) {
 
-	big_image.setAttribute("src", "images/" + num + ".png");
+		big_image.setAttribute("src", "images/" + num + ".png");
 
-	var bi_width = big_image.naturalWidth;
-	var bi_height = big_image.naturalHeight;
+		var bi_width = big_image.naturalWidth;
+		var bi_height = big_image.naturalHeight;
 
-	var new_width = (bi_width*600) / bi_height;
+		var new_width = (bi_width*600) / bi_height;
 
+		big_image.setAttribute("width", new_width);
+		big_image.setAttribute("height", 600);
 
-	//big_image.setAttribute("width", bi_width/5);
-	//big_image.setAttribute("height", bi_height/5);
-	big_image.setAttribute("width", new_width);
-	big_image.setAttribute("height", 600);
-
-	play_big_image_slide_in();
-
+		play_big_image_slide_in();
+	}
 }
 
 function play_big_image_slide_in() {
