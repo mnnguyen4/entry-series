@@ -6,7 +6,7 @@ for (let i = 0; i < entry.length; i++) {
 	entry[i].addEventListener("mouseover", display_character);
 }
 
-var big_image = document.getElementsByClassName("big_image")[0]
+var big_image = document.getElementsByClassName("big_image")[0];
 
 // Displays matching character
 function display_character() {

@@ -58,17 +58,15 @@ Intro paragraph to explain project.
 		$.getJSON("data/characters.json", function (data) {
 			var character = '';
 			$.each(data, function (key, value) {
-				character += "<div class=\"entry\"" + " number=" + value.number + ">" + value.name + "</div>";
+				character = "<div class=\"entry\"" + " number=" + value.number + ">" + value.name + "</div>";
 			});
 		$("body").append(character);
 		});
 	});
 </script>
 
-<script src="scripts/display_character.js"></script>
-
 <!-- some tests with the entry class -->
-
+<!--
 <div class="entry" number=1 >
 Pedro
 </div>
@@ -76,7 +74,7 @@ Pedro
 <div class="entry" number=2>
 Kirch&shy;off
 </div>
-<!--
+
 <div class="entry" number=2>
 bob
 </div>
@@ -93,6 +91,8 @@ bob
 bobby the generous clown
 </div>
 -->
+
+<script src="scripts/display_character.js"></script>
 
 </body>
 </div>
