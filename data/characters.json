@@ -1,12 +1,10 @@
 {
-
-		{
-			"name": "Pedro la Susan",
-			"number": 1
-		},
-		{
-			"name": "Swift-footed Kirchoff",
-			"number": 2
-		}
-
+	{
+		"name": "Ped&shy;ro la Sus&shy;an",
+		"number": 1
+	},
+	{
+		"name": "Swift-foot&shy;ed Kirch&shy;off",
+		"number": 2
+	}
 }
