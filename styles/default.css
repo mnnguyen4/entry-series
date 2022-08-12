@@ -79,6 +79,10 @@ h1 {
 /*
 	Entry list style information
 */
+.entry_list {
+	width: 300px;
+}
+
 .entry {
 	font-family: PressStart2P-Regular;
 	font-size: 15px;

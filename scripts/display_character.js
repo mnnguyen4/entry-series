@@ -23,7 +23,7 @@ function populate() {
 		new_entry.textContent = character_data.name;
 		new_entry.setAttribute("number", character_data.number);
 
-		document.body.appendChild(new_entry);
+		document.getElementsByClassName("entry_list")[0].appendChild(new_entry);
 	}
 	activate_interactive();
 }
@@ -42,12 +42,13 @@ function activate_interactive() {
 
 // Displays matching character
 function display_character() {
+
 	var num = event.target.getAttribute("number");
 	var old_image = big_image.getAttribute("src");
 	var new_image = "images/" + num + ".png";
 	if (old_image != new_image) {
 
-		big_image.setAttribute("right", "-1000px");
+		play_big_image_slide_in();
 		big_image.setAttribute("src", "images/" + num + ".png");
 
 		var bi_width = big_image.naturalWidth;
@@ -58,7 +59,6 @@ function display_character() {
 		big_image.setAttribute("width", new_width);
 		big_image.setAttribute("height", 600);
 
-		play_big_image_slide_in();
 	}
 }
 
