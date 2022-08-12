@@ -75,8 +75,13 @@ function display_character() {
 		var bi_width = big_image.naturalWidth;
 		var bi_height = big_image.naturalHeight;
 
-		var new_height = (new_width*bi_height)/bi_width;
-		var new_width = 450;
+		if (bi_width <= bi_height) {
+			var new_height = 450;
+			var new_width = (new_height*bi_width)/bi_height;
+		} else {
+			var new_width = 600;
+			var new_height = (new_width*bi_height)/bi_width;
+		}
 
 		big_image.setAttribute("width", new_width);
 		big_image.setAttribute("height", new_height);
