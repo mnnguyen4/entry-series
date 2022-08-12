@@ -47,6 +47,7 @@ function display_character() {
 	var new_image = "images/" + num + ".png";
 	if (old_image != new_image) {
 
+		big_image.setAttribute("right", "-1000px");
 		big_image.setAttribute("src", "images/" + num + ".png");
 
 		var bi_width = big_image.naturalWidth;
