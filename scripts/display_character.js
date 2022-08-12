@@ -69,5 +69,4 @@ function play_big_image_slide_in() {
 			document.getElementsByClassName("big_image")[0].className = "big_image changing";
 		});
 	});
-	console.log("animation played");
 }
