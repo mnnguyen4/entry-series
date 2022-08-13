@@ -2,64 +2,64 @@
 	{
 		"name": "Pedro la Susan & Ailia",
 		"number": 1,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Swift-footed Kirchoff",
 		"number": 2,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Jamie Colors",
 		"number": 3,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Skyla Farmsworth & Cloud",
 		"number": 4,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Wish",
 		"number": 5,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Beta the Goblin",
 		"number": 8,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Jharid",
 		"number": 11,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Coral Bloodclaw",
 		"number": 12,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	},
 	{
 		"name": "Hellsparker",
 		"number": 13,
-		"color_font": #ffffff,
-		"color_front": #ffffff,
-		"color_back": #ffffff
+		"color_font": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 	}
 ]
