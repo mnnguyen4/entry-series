@@ -115,11 +115,14 @@ function display_character() {
 	var previousActive = document.getElementsByClassName("entry active")[0];
 	if (previousActive != null) {
 		previousActive.className = "entry";
+		previousActive.style.color = "#ffffff";
+		previousActive.style.background = "#000000";
+		previousActive.style.borderColor = "#000000";
+		previousActive.style.boxShadow = "5px 5px 0px #000000";
 	}
-	//target.className = "entry active";
-	//target.style.color = "rgb(255,255,255)";
-	console.log(target.getAttribute("font_color"));
-	target.style.color = target.getAttribute("color_font");
+	target.className = "entry active";
+
+	target.style.color = target.getAttribute("font_color");
 	target.style.background = target.getAttribute("color_front");
 	target.style.borderColor = target.getAttribute("color_front");
 	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("color_back");
