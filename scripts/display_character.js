@@ -74,12 +74,19 @@ function display_character() {
 
 		var bi_width = big_image.naturalWidth;
 		var bi_height = big_image.naturalHeight;
+		var difference = bi_width - bi_height;
 
-		if (bi_width <= bi_height) {
-			var new_height = 450;
+		// height is greater than width
+		if (difference < -200) {
+			var new_height = 600;
 			var new_width = (new_height*bi_width)/bi_height;
+		// width is greater than height
+		} else if (difference > 200) {
+			var new_width = 640;
+			var new_height = (new_width*bi_height)/bi_width;
+		// width and height are roughly the same
 		} else {
-			var new_width = 600;
+			var new_width = 500;
 			var new_height = (new_width*bi_height)/bi_width;
 		}
 
