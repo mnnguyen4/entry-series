@@ -108,6 +108,12 @@ function display_character() {
 		}
 		offscreen = 0;
 	}
+
+	var previousActive = document.getElementsByClassName("entry active")[0];
+	if (previousActive != null) {
+		previousActive.className = "entry";
+	}
+	target.className = "entry active";
 }
 
 function play_big_image_slide_in() {
