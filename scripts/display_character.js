@@ -70,30 +70,42 @@ function display_character() {
 
 		play_big_image_slide_in();
 		big_image.setAttribute("src", "");
-		big_image.setAttribute("src", "images/" + curr_num + ".png");
+		big_image.setAttribute("src", new_image);
+		big_image.onload = function() {
 
-		var bi_width = big_image.naturalWidth;
-		var bi_height = big_image.naturalHeight;
-		var difference = bi_width - bi_height;
+			var bi_width = big_image.naturalWidth;
+			var bi_height = big_image.naturalHeight;
+			var difference = bi_width - bi_height;
 
-		// height is greater than width
-		if (difference < -200) {
-			var new_height = 600;
-			var new_width = (new_height*bi_width)/bi_height;
-		// width is greater than height
-		} else if (difference > 200) {
-			var new_width = 640;
-			var new_height = (new_width*bi_height)/bi_width;
-		// width and height are roughly the same
-		} else {
-			var new_width = 500;
-			var new_height = (new_width*bi_height)/bi_width;
+			var new_height = 0;
+			var new_width = 0;
+			// height is greater than width; extreme
+			if (difference < -400) {
+				new_height = 660;
+				new_width = (new_height*bi_width)/bi_height;
+			// height is greater than width
+			} else if (difference < -200) {
+				new_height = 600;
+				new_width = (new_height*bi_width)/bi_height;
+			// width is greater than height; extreme
+			} else if (difference > 400) {
+				new_width = 640;
+				new_height = (new_width*bi_height)/bi_width;
+			// width is greater than height
+			} else if (difference > 200) {
+				new_width = 610;
+				new_height = (new_width*bi_height)/bi_width;
+			// width and height are roughly the same
+			} else {
+				new_width = 540;
+				new_height = (new_width*bi_height)/bi_width;
+			}
+
+			big_image.setAttribute("width", new_width);
+			big_image.setAttribute("height", new_height);
 		}
-
-		big_image.setAttribute("width", new_width);
-		big_image.setAttribute("height", new_height);
+		offscreen = 0;
 	}
-	offscreen = 0;
 }
 
 function play_big_image_slide_in() {
