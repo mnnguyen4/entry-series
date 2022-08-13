@@ -113,11 +113,12 @@ function display_character() {
 	if (previousActive != null) {
 		previousActive.className = "entry";
 	}
-	target.className = "entry active";
-	target.style.color = rgb("255","255","255");
-	target.style.background = rgb("255","255","255");
-	target.style.border = "3px solid " + rgb("255","255","255");
-	target.style.box-shadow = "5px 5px 0px " + rgb("255","255","255");
+	//target.className = "entry active";
+	//target.style.color = "rgb(255,255,255)";
+	target.style.color = target.getAttribute("font_color");
+	target.style.background = target.getAttribute("font_color");
+	target.style.borderColor = target.getAttribute("font_color");
+	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("font_color");
 }
 
 function play_big_image_slide_in() {
