@@ -97,8 +97,27 @@ h1 {
 }
 
 /*
-	Entry list style information
+	Entry list style information and animations
 */
+@keyframes blink {
+	from {
+		background: #000000;
+		border: 3px solid #000000;
+		color: #ffffff;
+	}
+
+	to {
+		background: #ffffff;
+		border: 3px solid #ffffff;
+		color: #000000;
+	}
+}
+
+.blinker {
+	animation-duration: 1s;
+	animation-name: blink;
+}
+
 .entry_list {
 	width: 400px;
 }

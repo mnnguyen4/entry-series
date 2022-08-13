@@ -36,7 +36,7 @@ function activate_interactive() {
 
 	// Adds onhover listener to entries in entry list
 	for (let i = 0; i < entry.length; i++) {
-		entry[i].addEventListener("mouseover", display_character);
+		entry[i].addEventListener("click", display_character);
 		var temp_img = new Image();
 		temp_img.src = "images/" + entry[i].number + ".png";
 	}
@@ -63,7 +63,14 @@ function fade_big_image() {
 // Displays matching character
 function display_character() {
 
-	curr_num = event.target.getAttribute("number");
+	var target = event.target;
+	target.className = "entry";
+	requestAnimationFrame((time) => {
+		requestAnimationFrame((time) => {
+			target.className = "entry blinker";
+		});
+	});
+	curr_num = target.getAttribute("number");
 	var old_image = big_image.getAttribute("src");
 	var new_image = "images/" + curr_num + ".png";
 	if (old_image != new_image) {
