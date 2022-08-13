@@ -2,55 +2,73 @@
 	{
 		"name": "Pedro la Susan & Ailia",
 		"number": 1,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Swift-footed Kirchoff",
 		"number": 2,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Jamie Colors",
 		"number": 3,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Skyla Farmsworth & Cloud",
 		"number": 4,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Wish",
 		"number": 5,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Beta the Goblin",
 		"number": 8,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Jharid",
 		"number": 11,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Coral Bloodclaw",
 		"number": 12,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	},
 	{
 		"name": "Hellsparker",
 		"number": 13,
-		"font_color": "#ffffff"
+		"font_color": "#ffffff",
+		"color_front": "#ffffff",
+		"color_back": "#ffffff"
 		
 	}
 ]
