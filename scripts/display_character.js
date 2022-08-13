@@ -24,6 +24,7 @@ function populate() {
 		new_entry.className = "entry";
 		new_entry.textContent = character_data.name;
 		new_entry.setAttribute("number", character_data.number);
+		new_entry.setAttribute("font_color", character_data.font_color);
 
 		document.getElementsByClassName("entry_list")[0].appendChild(new_entry);
 	}
@@ -115,7 +116,7 @@ function display_character() {
 	}
 	//target.className = "entry active";
 	//target.style.color = "rgb(255,255,255)";
-	console.log(target.getAttribute("number"));
+	console.log(target.getAttribute("font_color"));
 	/*target.style.color = target.getAttribute("color_font");
 	target.style.background = target.getAttribute("color_font");
 	target.style.borderColor = target.getAttribute("color_font");
