@@ -31,6 +31,7 @@ html {
 
 h1 {
 	font-family: PressStart2P-Regular;
+	text-align: center;
 	color: #ffffff;
 	text-shadow:
 		-2px -2px 0 #000000,
@@ -39,6 +40,11 @@ h1 {
 		-2px 0px 0 #000000,
 		2px 0px 0 #000000,
 		2px 2px 0 #000000;
+}
+
+#paragraph {
+	display: flex;
+	justify-content: center;
 }
 
 #container {
@@ -52,10 +58,10 @@ h1 {
 	pointer-events: none;
 	right:-1000px;
 	position: fixed;
-	bottom: -50px;
+	bottom: 10px;
 	z-index:3;
 
-	filter: drop-shadow(20px 20px 0px #212121);
+	filter: drop-shadow(20px -5px 0px #212121);
 }
 
 @keyframes slide_in {
@@ -102,6 +108,8 @@ h1 {
 
 .entry_list {
 	width: 400px;
+	height: 750px;
+	overflow-y: scroll
 }
 
 .entry {

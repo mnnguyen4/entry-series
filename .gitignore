@@ -1,5 +1,6 @@
 *.vs
-.vs/
+.vs\
+.vs\*
 *.suo
 .us/VSWorkspaceState.json
 *.vsidx

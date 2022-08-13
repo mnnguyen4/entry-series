@@ -51,10 +51,10 @@ function activate_interactive() {
 function fade_big_image() {
 	var lastKnownScrollPosition = window.scrollY;
 
-	if (lastKnownScrollPosition < 500 && offscreen == 0) {
+	if (lastKnownScrollPosition < 200 && offscreen == 0) {
 		play_big_image_slide_out();
 		offscreen = 1;
-	} else if (lastKnownScrollPosition >= 500 && offscreen == 1) {
+	} else if (lastKnownScrollPosition >= 200 && offscreen == 1) {
 		play_big_image_slide_in();
 		offscreen = 0;
 	}
