@@ -64,12 +64,7 @@ function fade_big_image() {
 function display_character() {
 
 	var target = event.target;
-	target.className = "entry";
-	requestAnimationFrame((time) => {
-		requestAnimationFrame((time) => {
-			target.className = "entry blinker";
-		});
-	});
+
 	curr_num = target.getAttribute("number");
 	var old_image = big_image.getAttribute("src");
 	var new_image = "images/" + curr_num + ".png";
