@@ -115,10 +115,11 @@ function display_character() {
 	}
 	//target.className = "entry active";
 	//target.style.color = "rgb(255,255,255)";
-	target.style.color = target.getAttribute("font_color");
-	target.style.background = target.getAttribute("font_color");
-	target.style.borderColor = target.getAttribute("font_color");
-	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("font_color");
+	console.log(target.getAttribute("color_font"));
+	target.style.color = target.getAttribute("color_font");
+	target.style.background = target.getAttribute("color_font");
+	target.style.borderColor = target.getAttribute("color_font");
+	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("color_font");
 }
 
 function play_big_image_slide_in() {
