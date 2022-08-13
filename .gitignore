@@ -3,3 +3,6 @@
 .us/VSWorkspaceState.json
 *.vsidx
 .vs/entry-series/v17/.suo
+.vs/entry-series/v17/.suo
+*.sqlite
+.vs/VSWorkspaceState.json
