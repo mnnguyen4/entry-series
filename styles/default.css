@@ -100,7 +100,7 @@ h1 {
 	Entry list style information
 */
 .entry_list {
-	width: 300px;
+	width: 400px;
 }
 
 .entry {
@@ -113,9 +113,9 @@ h1 {
 
 	background: #000000;
 	display: inline-flex;
-	width: 100px;
-	height: 100px;
-	word-break: break-all;
+	width: 150px;
+	height: 150px;
+	word-break: normal;
 	padding: 5px;
 	border: 3px solid #000000;
 	margin: 10px;
