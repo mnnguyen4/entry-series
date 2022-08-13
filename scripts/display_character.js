@@ -115,7 +115,7 @@ function display_character() {
 	}
 	//target.className = "entry active";
 	//target.style.color = "rgb(255,255,255)";
-	console.log(target.getAttribute("fontcolor"));
+	console.log(target.getAttribute("number"));
 	/*target.style.color = target.getAttribute("color_font");
 	target.style.background = target.getAttribute("color_font");
 	target.style.borderColor = target.getAttribute("color_font");
