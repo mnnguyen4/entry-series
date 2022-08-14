@@ -152,9 +152,9 @@ h1 {
 }
 
 .entry:hover {
-	color: #000000;
-	border: 3px solid #ffffff;
-	background-color: white;
+	color: #000000 !important;
+	border: 3px solid #ffffff !important;
+	background-color: white !important;
 }
 
 /*
