@@ -18,6 +18,16 @@ async function retrieve() {
 	populate();
 }
 
+// Grabs text file with entry text
+async function retrieveText(number) {
+	const requestURL = "https://mnnguyen4.github.io/entry-series/text/" + number + ".txt";
+	const request = new Request(requestURL);
+
+	const repose = await fetch(request);
+	const text = await response.text();
+	return text;
+}
+
 function populate() {
 	for (const entry in entries) {
 		const new_entry = document.createElement("div");
@@ -129,7 +139,13 @@ function display_character() {
 	target.style.borderColor = target.getAttribute("color_front");
 	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("color_back");
 
-	entry_text.textContent = "#" + target.getAttribute("number") + " - " + target.textContent;
+	var text = "#" + target.getAttribute("number") + " - " + target.textContent + "\n\n";
+	var pad_text = retrieveText(target.getAttribute("number"));
+	if (pad_text != null) {
+		entry_text.textContent = text + pad_text;
+	} else {
+		entry_text.textContent = text;
+	}
 
 }
 
