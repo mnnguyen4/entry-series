@@ -109,6 +109,7 @@ h1 {
 .entry_list {
 	width: 400px;
 	height: 750px;
+	float: left;
 	overflow-y: scroll
 }
 
@@ -155,6 +156,43 @@ h1 {
 	color: #000000 !important;
 	border: 3px solid #ffffff !important;
 	background-color: white !important;
+}
+
+.entry_text_container {
+	width: 667px;
+	height: 720px;
+	float: right;
+	overflow: hidden;
+}
+
+.entry_text {
+	width: 667px;
+	height: 700px;
+	padding-right: 20px;
+	overflow-y: scroll;
+
+	font-family: PressStart2P-Regular;
+	font-size: 15px;
+	word-wrap: normal;
+	color: #efefef;
+	hyphens: auto;
+	text-align: left;
+	z-index: 2;
+}
+
+.entry_container {
+	width: 1087px;
+	height: 770px;
+}
+
+#h_gap {
+	width: 667px;
+	height: 50px;
+}
+
+#v_gap {
+	width: 100%;
+	height: 50px;
 }
 
 /*

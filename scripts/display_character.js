@@ -4,6 +4,7 @@ var entries;
 var big_image;
 var offscreen;
 var curr_num;
+var entry_text;
 retrieve();
 
 // Grabs JSON file with entries
@@ -30,6 +31,7 @@ function populate() {
 
 		document.getElementsByClassName("entry_list")[0].appendChild(new_entry);
 	}
+	entry_text = document.getElementsByClassName("entry_text")[0];
 	activate_interactive();
 }
 
@@ -126,6 +128,9 @@ function display_character() {
 	target.style.background = target.getAttribute("color_front");
 	target.style.borderColor = target.getAttribute("color_front");
 	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("color_back");
+
+	entry_text.textContent = "#" + target.getAttribute("number") + " - " + target.textContent;
+
 }
 
 function play_big_image_slide_in() {
