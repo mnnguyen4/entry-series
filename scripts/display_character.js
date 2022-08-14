@@ -23,7 +23,7 @@ async function retrieveText(number) {
 	const requestURL = "https://mnnguyen4.github.io/entry-series/text/" + number + ".txt";
 	const request = new Request(requestURL);
 
-	const repose = await fetch(request);
+	const response = await fetch(request);
 	const text = await response.text();
 	return text;
 }
@@ -142,7 +142,9 @@ function display_character() {
 	var text = "#" + target.getAttribute("number") + " - " + target.textContent + "\n\n";
 	var pad_text = retrieveText(target.getAttribute("number"));
 	if (pad_text != null) {
-		entry_text.textContent = text + pad_text;
+		pad_text.then((response) => {
+			entry_text.textContent = text + response;
+		});
 	} else {
 		entry_text.textContent = text;
 	}
