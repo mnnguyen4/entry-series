@@ -141,13 +141,12 @@ function display_character() {
 
 	var text = "#" + target.getAttribute("number") + " - " + target.textContent + "\n\n";
 	var pad_text = retrieveText(target.getAttribute("number"));
-	if (pad_text != null) {
-		pad_text.then((response) => {
-			entry_text.textContent = text + response;
-		});
-	} else {
-		entry_text.textContent = text;
-	}
+	pad_text.then((response) => {
+		entry_text.textContent = text + response;
+	})
+	.catch(() => {
+		console.error("Could not obtain page.");
+	});
 
 }
 

@@ -31,7 +31,7 @@ html {
 
 h1 {
 	font-family: PressStart2P-Regular;
-	text-align: center;
+	text-align: left;
 	color: #ffffff;
 	text-shadow:
 		-2px -2px 0 #000000,
@@ -44,7 +44,7 @@ h1 {
 
 #paragraph {
 	display: flex;
-	justify-content: center;
+	width: 1400px;
 }
 
 #container {
@@ -98,8 +98,9 @@ h1 {
 	Paragraph style
 */
 .para {
-	width: 400px;
-	word-wrap: normal;
+	display: block;
+	width: 500px;
+	word-wrap: break-word;
 }
 
 /*
@@ -170,6 +171,7 @@ h1 {
 	height: 700px;
 	padding-right: 20px;
 	overflow-y: scroll;
+	overflow-x: clip;
 	white-space: pre-wrap;
 
 	font-family: PressStart2P-Regular;
