@@ -24,6 +24,9 @@ async function retrieveText(number) {
 	const request = new Request(requestURL);
 
 	const response = await fetch(request);
+	if (!response.ok) {
+		throw new Error("Could not obtain text entry.");
+	}
 	const text = await response.text();
 	return text;
 }
@@ -139,13 +142,14 @@ function display_character() {
 	target.style.borderColor = target.getAttribute("color_front");
 	target.style.boxShadow = "5px 5px 0px " + target.getAttribute("color_back");
 
-	var text = "#" + target.getAttribute("number") + " - " + target.textContent + "\n\n";
+	var subject_text = "#" + target.getAttribute("number") + " - " + target.textContent + "\n\n";
 	var pad_text = retrieveText(target.getAttribute("number"));
 	pad_text.then((response) => {
-		entry_text.textContent = text + response;
+		entry_text.textContent = subject_text + response;
 	})
-	.catch(() => {
-		console.error("Could not obtain page.");
+	.catch((error_message) => {
+		console.error(error_message);
+		entry_text.textContent = subject_text;
 	});
 
 }
