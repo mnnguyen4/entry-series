@@ -5,6 +5,8 @@ var big_image;
 var offscreen;
 var curr_num;
 var entry_text;
+var text_top;
+var text_bottom;
 retrieve();
 
 // Grabs JSON file with entries
@@ -60,6 +62,9 @@ function activate_interactive() {
 	}
 
 	document.addEventListener("scroll", fade_big_image);
+	document.getElementsByClassName("entry_text")[0].addEventListener("scroll", detectInfo);
+	text_top = document.getElementsByClassName("entry_text_top")[0];
+	text_bottom = document.getElementsByClassName("entry_text_bottom")[0];
 
 	big_image = document.getElementsByClassName("big_image")[0];
 	offscreen = 1;
@@ -75,6 +80,24 @@ function fade_big_image() {
 	} else if (lastKnownScrollPosition >= 200 && offscreen == 1) {
 		play_big_image_slide_in();
 		offscreen = 0;
+	}
+}
+
+// Displays above or below the entry text if there is available
+// text to scroll to
+function detectInfo() {
+	scroll_pos = event.target.scrollTop;
+	scroll_pos_from_bottom = event.target.scrollHeight - scroll_pos - 680;
+	if (scroll_pos > 40) {
+		text_top.textContent = "^^^  UP  ^^^";
+	} else if (text_top.textContent = "^  UP  ^"){
+		text_top.textContent = "";
+	}
+
+	if (scroll_pos_from_bottom > 20) {
+		text_bottom.textContent = "vvv  DOWN  vvv";
+	} else if (text_bottom.textContent = "vvv  DOWN  vvv"){
+		text_bottom.textContent = "";
 	}
 }
 

@@ -168,7 +168,7 @@ h1 {
 
 .entry_text {
 	width: 667px;
-	height: 700px;
+	height: 680px;
 	padding-right: 20px;
 	overflow-y: scroll;
 	overflow-x: clip;
@@ -176,11 +176,43 @@ h1 {
 
 	font-family: PressStart2P-Regular;
 	font-size: 15px;
-	word-wrap: normal;
+	word-wrap: break-word;
 	color: #efefef;
 	hyphens: auto;
 	text-align: left;
 	z-index: 2;
+}
+
+.entry_text_top {
+	font-family: PressStart2P-Regular;
+	font-size: 15px;
+	word-wrap: break-word;
+	color: #efefef;
+	height: 20px;
+
+	text-shadow:
+		-3px -3px 0 #000000,
+		0px 3px 0 #000000,
+		0px -3px 0 #000000,
+		-3px 0px 0 #000000,
+		3px 0px 0 #000000,
+		3px 3px 0 #000000;
+}
+
+.entry_text_bottom {
+	font-family: PressStart2P-Regular;
+	font-size: 15px;
+	word-wrap: break-word;
+	color: #efefef;
+	height: 20px;
+
+	text-shadow:
+		-3px -3px 0 #000000,
+		0px 3px 0 #000000,
+		0px -3px 0 #000000,
+		-3px 0px 0 #000000,
+		3px 0px 0 #000000,
+		3px 3px 0 #000000;
 }
 
 .entry_container {
